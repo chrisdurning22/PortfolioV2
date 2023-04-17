@@ -1,24 +1,74 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home/Home';
+import { useState } from 'react';
+import { ToastContainer } from 'react-toastify';
+import { Button } from 'react-bootstrap';
+import CV from '../src/assets/shared/ChrisDurning2023CV.pdf'
 
-function App() {
+const App = () => {
+  const [navVisible, setNavVisible] = useState(false);
+  const [navClass, setNavClass] = useState('nav-invisible');
+  const [navCloseButtonClass, setNavCloseButtonClass] = useState('');
+
+  const navToggle = () => {
+    setNavVisible(!navVisible); 
+
+    if(navVisible) {
+      setNavClass('nav-visible');
+      setNavCloseButtonClass('close-button');
+    }
+    else {
+      setNavClass('nav-invisible');
+      setNavCloseButtonClass('');
+    }
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <ToastContainer />
+      <header>
+        <nav>
+          <div>
+            <a className='fade-item' style={{ animationDelay: '0ms'}} href="/#top">&lt;chris.durning&gt;</a>
+          </div>
+          <button onClick={navToggle} className={'nav-toggle ' + navCloseButtonClass} aria-controls='primary-nav'>
+            <span className='sr-only'>Menu</span>
+          </button>
+          <ul className={'primary-nav ' + navClass}>
+            <li className='fade-item' style={{ animationDelay: '0ms'}}>
+              <a href="/#top">
+                <span aria-hidden='true'>01.</span>About
+              </a>
+            </li>
+            <li className='fade-item' style={{ animationDelay: '100ms'}}>
+              <a href="/#experience">
+                <span aria-hidden='true'>02.</span>Experience
+              </a>
+            </li>
+            <li className='fade-item' style={{ animationDelay: '200ms'}}>
+              <a href="/#projects">
+                <span aria-hidden='true'>03.</span>Projects
+              </a>
+            </li>
+            <li className='fade-item' style={{ animationDelay: '300ms'}}>
+              <a href="/#contact">
+                <span aria-hidden='true'>04.</span>Contact
+              </a>
+            </li>
+            <li className='fade-item' style={{ animationDelay: '400ms'}}>
+              <a href={CV} target="_blank" rel="noopener noreferrer">
+                <Button className='resume-button'>Resume</Button>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </header>
+      <Home/>
+      <footer>
+        <div className='flex-center'>
+          <p>© Copyright Chris Durning 2023.</p>
+        </div>
+      </footer>
     </div>
   );
 }

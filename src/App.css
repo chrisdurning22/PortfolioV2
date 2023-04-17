@@ -1,38 +1,494 @@
+/* app start */
+
 .App {
-  text-align: center;
+  background-color: #49c5b6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #49c5b6;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.fade-item {
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  font-size: clamp(32px, 3vw, 52px);
+  white-space: nowrap;
+}
+
+h3 {
+  font-size: clamp(16px, 3vw, 20px);
+  white-space: nowrap;
+  margin-bottom: 20px !important;
+  color: white;
+
+}
+
+h4 {
+  font-size: clamp(14px, 2vw, 18px);
+  white-space: nowrap;
+  margin-bottom: 20px !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h5 {
+  font-size: clamp(13px, 2vw, 17px);
+  white-space: nowrap;
+  margin-bottom: 20px !important;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+p {
+  color: white;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+label {
+  color: white;
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+#experience li {
+  color: white;
+  font-size: clamp(12px, 2vw, 16px);  
+}
+
+a {
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.1s;
+  text-decoration: auto !important;
+  color: white !important;
+}
+
+.section-child {
+  width: 800px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* app end  */
+
+
+/* navbar start */
+
+.nav-link {
+  font-size: 15px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+header {
+  width: 100%;
+  z-index: 9999;
+  padding: 0px 50px;
+  position: fixed;
+  background-color: #49c5b6;
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav > div > a {
+  padding: 10px 10px;
+}
+
+.primary-nav > li > a {
+  display: inline-block;
+  padding: 10px 10px;
+  transform: none !important;
+}
+
+nav a > span {
+  font-weight: 700;
+}
+
+.primary-nav {
+  display: flex;
+  gap: 1.5em;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  list-style: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+@media (min-width: 850px) {
+  .primary-nav {
+    align-items: center;
   }
 }
+
+@media (max-width: 850px) {
+  .primary-nav {
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    gap: 1.5em;
+
+    background: lightseagreen;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2em;
+  }
+
+  .nav-invisible {
+    transform: translateX(100%);
+  }
+
+  .nav-visible {
+    transform: translateX(0%);
+    transition: transform 350ms ease-out;
+  }
+
+  nav > div > a {
+    display: none;
+  }
+
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    background: url('../src/assets/shared/menu-hamburger.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 18px;
+    right: 2rem;
+    z-index: 9999;
+  }
+
+  .close-button {
+    background: url('../src/assets/shared/x.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+    top: 10px;
+    right: 24px;
+    z-index: 9999;
+  }
+
+  .primary-nav > li > a {
+    padding-left: 0px;
+  }
+}
+
+.resume-button {
+  border-color: white;
+  background: transparent;
+}
+
+.resume-button:hover {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  transform: scale(1.1);
+}
+
+.resume-button:active {
+  background: transparent !important;
+  border-color: white !important;
+  color: white !important;
+}
+
+.resume-button:focus {
+  background: transparent !important;
+  border-color: white !important;
+  color: white !important;
+}
+
+/* navbar end */
+
+/* footer start */
+
+footer {
+  width: 100%;
+  z-index: 9999;
+  padding: 20px 50px;
+  /* background-color: yellow; */
+  height: 60px;
+  left:0px;
+  bottom:0px;
+}
+
+/* footer end */
+
+/* rich text editor start */
+
+label {
+  /* color: rgba(0,0,0,.55); */
+}
+
+/* rich text editor end */
+
+/* flexbox start */
+
+.flex {
+  display: flex;
+}
+
+.flex-item-bottom {
+  align-items: flex-end;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: right;
+}
+
+.flex-left {
+  display: flex;
+  justify-content: left;
+}
+
+.flex-gap-15 {
+  gap: 15px;
+}
+
+/* flexbox end */
+
+/* hero start */
+
+.hero-header {
+  padding-top: 100px; /*  cd todo needs to account for different screen sizes */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.hero {
+  background-color: #49c5b6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 > div {
+  float: left;
+}
+
+h1 > strong {
+  float: left;
+}
+
+.profile-pic-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px 10px 20px; 
+  width: 200px;
+  height: 200px;
+  border: 10px solid white;
+  outline: 2px solid rgba(0,0,0,.125);;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+/* hero end */
+
+/* about start */
+
+.about {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* padding-top: 50px; */
+  scroll-margin-top: 60px;
+}
+
+/* about end */
+
+/* experience start */
+
+.experience {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:  #D14836;
+  scroll-margin-top: 60px;
+}
+
+.nav-item {
+  padding-bottom: 5px;
+}
+
+.experience-heading {
+  margin-left: 16px;
+}
+
+#experience .col-sm-3 {
+  padding-left: 0px;
+}
+
+@media (max-width: 850px) {
+  .experience-heading {
+    margin-top: 20px;
+  }
+}
+
+/* experience end */
+
+/* project start */
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:  #2779a7;
+  scroll-margin-top: 59px;
+}
+
+.project-image-wrapper {
+  position: relative;
+}
+
+.project-image-desc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 20px 30px 20px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  height: 100%;
+  width: 100%;
+}
+
+.project-image-wrapper:hover .project-image-desc {
+  visibility: visible;
+  opacity: 1;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.stack > p {
+  width: max-content;
+  background-color: cornflowerblue;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  letter-spacing: 0.2em;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.github-link-wrapper {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+@media (max-width: 450px) {
+  #projects img {
+    height: 350px;
+  }
+}
+
+/* project end */
+
+/* contact start */
+
+.contact {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  scroll-margin-top: 59px;
+  background-color: lightgray;
+  padding-bottom: 200px;
+}
+
+.contact-section {
+  width: 800px;
+  padding-top: 30px;
+}
+
+/* contact end */
+
+/* socials start */
+
+.socials {
+  padding-top: 20px;
+}
+
+.socials-wrapper > a {
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.1s;
+  color: white;
+}
+
+.socials-wrapper > a:hover {
+  transform: scale(1.1);
+}
+
+.socials-wrapper {
+  top: 100%;
+  display: flex !important;
+  justify-content: left;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+/* socials end */
