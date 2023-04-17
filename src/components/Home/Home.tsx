@@ -1,5 +1,4 @@
-import { FC, RefObject } from "react";
-import About from "../About/About";
+import { FC } from "react";
 import Contact from "../Contact/Contact";
 import Experience from "../Experience/Experience";
 import Hero from "../Hero/Hero";

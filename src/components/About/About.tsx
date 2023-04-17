@@ -1,4 +1,4 @@
-import React, { FC, RefObject } from "react";
+import React, { FC } from "react";
 
 interface AboutProps {}
 
