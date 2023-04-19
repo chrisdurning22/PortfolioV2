@@ -7,7 +7,7 @@ import Tab from 'react-bootstrap/Tab';
 interface ExperienceProps {}
 
 const Experience: FC<ExperienceProps> = () => (
-    <section className='experience fade-item' id="experience" style={{ animationDelay: '1500ms'}}>
+    <section className='experience fade-item' id="experience" style={{ animationDelay: '1100ms'}}>
       <div className='section-child'>
         <h3>Experience &#128188;</h3>
         <Tab.Container id="left-tabs-example" defaultActiveKey="first">

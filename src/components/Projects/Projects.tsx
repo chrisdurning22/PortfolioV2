@@ -8,7 +8,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 interface ProjectsProps {}
 
 const Projects: FC<ProjectsProps> = () => (
-    <section className='projects fade-item' id='projects' style={{ animationDelay: '1600ms'}}>
+    <section className='projects fade-item' id='projects' style={{ animationDelay: '1200ms'}}>
       <div className='section-child'>
         <h3>Projects &#128187;</h3>
         <div>

@@ -31,7 +31,11 @@ const App = () => {
           <div>
             <a className='fade-item' style={{ animationDelay: '0ms'}} href="/#top">&lt;chris.durning&gt;</a>
           </div>
-          <button onClick={navToggle} className={'nav-toggle ' + navCloseButtonClass} aria-controls='primary-nav'>
+          <button 
+            onClick={navToggle} 
+            className={'nav-toggle fade-item ' + navCloseButtonClass}
+            style={{ animationDelay: '0ms'}}
+            aria-controls='primary-nav'>
             <span className='sr-only'>Menu</span>
           </button>
           <ul className={'primary-nav ' + navClass}>

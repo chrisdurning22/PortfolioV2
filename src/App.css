@@ -78,7 +78,7 @@ a {
   -moz-transition: 0.3s;
   -webkit-transition: 0.3s;
   transition: 0.1s;
-  text-decoration: auto !important;
+  text-decoration: none !important;
   color: white !important;
 }
 
@@ -328,7 +328,6 @@ h1 > strong {
   width: 200px;
   height: 200px;
   border: 10px solid white;
-  outline: 2px solid rgba(0,0,0,.125);;
   border-radius: 100%;
   overflow: hidden;
 }
@@ -446,6 +445,20 @@ h1 > strong {
 }
 
 /* project end */
+
+/* skills start */
+
+.skills-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* remove ul dots */
+.skills-wrapper ul {
+  list-style-type: none;
+}
+
+/* skills end */
 
 /* contact start */
 
