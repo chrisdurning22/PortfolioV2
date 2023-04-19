@@ -3,7 +3,7 @@ import Contact from "../Contact/Contact";
 import Experience from "../Experience/Experience";
 import Hero from "../Hero/Hero";
 import Projects from "../Projects/Projects";
-// import Skills from "../Skills/Skills";
+import Skills from "../Skills/Skills";
 
 interface HomeProps {}
 
@@ -12,7 +12,7 @@ const Home: FC<HomeProps> = () => (
     <Hero/>
     <Experience/>
     <Projects/>
-    {/* <Skills/> */}
+    <Skills/>
     <Contact/>
   </div>
 )

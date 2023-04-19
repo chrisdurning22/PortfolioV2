@@ -36,7 +36,7 @@ const Projects: FC<ProjectsProps> = () => (
             <p>Jest</p>
           </div>
           <div className='github-link-wrapper'>
-          <h5 className='no-margin-bottom'>Check out the code: &nbsp;</h5>
+          <h5 className='no-margin-bottom'>Check out the code &nbsp;</h5>
             <a href="https://github.com/chrisdurning22/personal-website">
               <FontAwesomeIcon icon={faGithub} size={"2x"} />
             </a>
@@ -62,7 +62,7 @@ const Projects: FC<ProjectsProps> = () => (
             <p>Moq</p>
           </div>
           <div className='github-link-wrapper'>
-            <h5 className='no-margin-bottom'>Check out the code: &nbsp;</h5>
+            <h5 className='no-margin-bottom'>Check out the code &nbsp;</h5>
             <a href="https://github.com/chrisdurning22/neural-jump">
               <FontAwesomeIcon icon={faGithub} size={"2x"} />
             </a>
@@ -90,7 +90,7 @@ const Projects: FC<ProjectsProps> = () => (
             <p>JUnit</p>
           </div>
           <div className='github-link-wrapper'>
-          <h5 className='no-margin-bottom'>Check out the code: &nbsp;</h5>
+          <h5 className='no-margin-bottom'>Check out the code &nbsp;</h5>
             <a href="https://github.com/chrisdurning22/answer-box">
               <FontAwesomeIcon icon={faGithub} size={"2x"} />
             </a>

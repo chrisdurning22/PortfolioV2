@@ -55,11 +55,16 @@ const App = () => {
               </a>
             </li>
             <li className='fade-item' style={{ animationDelay: '300ms'}}>
-              <a href="/#contact">
-                <span aria-hidden='true'>04.</span>Contact
+              <a href="/#skills">
+                <span aria-hidden='true'>04.</span>Skills
               </a>
             </li>
             <li className='fade-item' style={{ animationDelay: '400ms'}}>
+              <a href="/#contact">
+                <span aria-hidden='true'>05.</span>Contact
+              </a>
+            </li>
+            <li className='fade-item' style={{ animationDelay: '500ms'}}>
               <a href={CV} target="_blank" rel="noopener noreferrer">
                 <Button className='resume-button'>Resume</Button>
               </a>

@@ -142,13 +142,13 @@ nav a > span {
   display: none;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1000px) {
   .primary-nav {
     align-items: center;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .primary-nav {
     position: fixed;
     z-index: 1000;
@@ -325,8 +325,8 @@ h1 > strong {
   display: flex;
   justify-content: center;
   margin: 10px 20px 10px 20px; 
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border: 10px solid white;
   border-radius: 100%;
   overflow: hidden;
@@ -354,7 +354,7 @@ h1 > strong {
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
-  background-color:  #D14836;
+  background-color:  cornflowerblue;
   scroll-margin-top: 60px;
 }
 
@@ -370,7 +370,7 @@ h1 > strong {
   padding-left: 0px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .experience-heading {
     margin-top: 20px;
   }
@@ -448,6 +448,15 @@ h1 > strong {
 
 /* skills start */
 
+.skills {
+  display: flex;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  scroll-margin-top: 59px;
+  background-color: lightcoral;
+}
+
 .skills-wrapper {
   display: flex;
   justify-content: space-between;
@@ -456,6 +465,18 @@ h1 > strong {
 /* remove ul dots */
 .skills-wrapper ul {
   list-style-type: none;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 0px;
+  gap: 15px;
+}
+
+#skills li:hover {
+  transform: scale(1.5);
 }
 
 /* skills end */

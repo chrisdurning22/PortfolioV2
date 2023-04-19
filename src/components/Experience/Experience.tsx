@@ -30,12 +30,23 @@ const Experience: FC<ExperienceProps> = () => (
                     <h5>January 2020 - May 2023</h5>
                   </div> 
                   <ul>
-                    <li>Contribute to the re-write of the entire business portfolio management application, which was originally written in .NET MVC and is slowly being phased out with Angular. (Notable dependencies: Angular Formly and Treegrid).</li>
-                    <li>Develop RESTful APIs that serve data to the Angular front-end.</li>
+                    <li>
+                      Re-write Keyedin's old business portfolio management
+                      ASP.NET MVC application into a modern, more aesthetically
+                      pleasing and higher performing Angular application.
+                    </li>
+                    <li>
+                      Develop RESTful APIs using ASP.NET Core that serve data to
+                      the Angular front-end.
+                    </li>
                     <li>Prevent the introduction of new bugs by writing unit tests with Jasmine and Karma.</li>
-                    <li>Collaborate with testers, developers, business analysts and product experts in an agile setting.</li>
+                    <li>
+                      Communicate and collaborate with developers, testers,
+                      business analysts and product experts in an agile setting.
+                    </li>
                     <li>Give time estimations for stories during the sprint planning phase.</li>
-                    <li>Perform team member code reviews.</li>
+                    <li>Demo newly added features to the product team.</li>
+                    <li>Perform code reviews.</li>
                   </ul>
                 </Tab.Pane>
                 <Tab.Pane eventKey="second">
