@@ -32,7 +32,7 @@ const Contact: FC<ContactProps> = () => {
 
   return (
     !loading ? 
-      <section data-testid="Contact" id='contact' className='contact fade-item' style={{ animationDelay: '1300ms'}}>
+      <section data-testid="Contact" id='contact' className='contact fade-item' style={{ animationDelay: '1400ms'}}>
         <div className='contact-section'>
           <h3>Contact &#128241;</h3>
           <form ref={form} id="contact-form" onSubmit={handleSubmit}>

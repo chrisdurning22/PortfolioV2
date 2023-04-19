@@ -25,7 +25,7 @@ const LightTooltip = styled(({ className, ...props }: TooltipProps) => (
 }));
 
 const Skills: FC<SkillsProps> = () => (
-  <section className='skills fade-item' style={{ animationDelay: '1000ms'}} id="skills">
+  <section className='skills fade-item' style={{ animationDelay: '1300ms'}} id="skills">
     <div className="section-child">
       <h3>Skills &#128295;</h3>
       <div className='skills-wrapper'>
