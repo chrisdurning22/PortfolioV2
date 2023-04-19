@@ -12,7 +12,7 @@ const Home: FC<HomeProps> = () => (
     <Hero/>
     <Experience/>
     <Projects/>
-    <Skills/>
+    {/* <Skills/> */}
     <Contact/>
   </div>
 )
