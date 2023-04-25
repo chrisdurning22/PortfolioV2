@@ -7,9 +7,9 @@ const About: FC<AboutProps> = () => (
     <div className="section-child">
       <h3>About Me &#128075;</h3>
       <p>
-        I am a software engineer looking for a new challenge. I have
-        experience at all levels of the stack. Most of my experience comes
-        from creating front-end applications with Javascript frameworks,
+        I'm currently looking for a new challenge. I have 4 years of professional experience
+        working at all levels of the stack. Most of my experience comes
+        from creating front-end web applications with Javascript frameworks,
         but I also have good experience developing RESTful API's. I am a
         hard worker with a passion for technology. I am always willing to
         adapt to change and improve my skillset through continuous

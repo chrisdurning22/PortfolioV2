@@ -66,7 +66,7 @@ p {
 
 label {
   color: white;
-  font-size: clamp(12px, 2vw, 16px);
+  font-size: clamp(10px, 2vw, 14px);
 }
 
 #experience li {
@@ -324,12 +324,18 @@ h1 > strong {
 .profile-pic-wrapper {
   display: flex;
   justify-content: center;
-  margin: 10px 20px 10px 20px; 
-  width: 180px;
-  height: 180px;
+  margin: 40px 40px 20px 20px; 
+  width: 200px;
+  height: 200px;
   border: 10px solid white;
   border-radius: 100%;
   overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .profile-pic-wrapper {
+    margin-top: 0px  !important;
+  }
 }
 
 /* hero end */
@@ -423,7 +429,7 @@ h1 > strong {
 
 .stack > p {
   width: max-content;
-  background-color: cornflowerblue;
+  background-color: black;
   color: white;
   text-transform: uppercase;
   padding: 5px 10px;
@@ -447,14 +453,13 @@ h1 > strong {
 /* project end */
 
 /* skills start */
-
 .skills {
   display: flex;
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
   scroll-margin-top: 59px;
-  background-color: lightcoral;
+  background-color: mediumslateblue;
 }
 
 .skills-wrapper {
@@ -472,11 +477,12 @@ h1 > strong {
   flex-direction: column;
   align-items: center;
   padding-left: 0px;
-  gap: 25px;
+  gap: 35px;
 }
 
-#skills li:hover {
-  transform: scale(1.5);
+.skills-item {
+  display: flex;
+  align-items: center;
 }
 
 /* skills end */
@@ -489,7 +495,7 @@ h1 > strong {
   padding-left: 20px;
   padding-right: 20px;
   scroll-margin-top: 59px;
-  background-color: lightgray;
+  background-color: gray;
   padding-bottom: 200px;
 }
 
