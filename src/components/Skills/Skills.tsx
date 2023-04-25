@@ -15,9 +15,9 @@ const Skills: FC<SkillsProps> = () => (
     <div className="section-child">
       <h3>Skills &#128295;</h3>
       <div className='skills-wrapper'>
-        <IconContext.Provider value={{color: 'ivory', size: '35px'}}>
+        <IconContext.Provider value={{color: 'ivory', size: '25px'}}>
           <div style={{width: '106px'}}>
-            <h4 className='margin-bottom-35' style={{textAlign: 'center'}}>Languages</h4>
+            <h4 className='margin-bottom-35'>Languages</h4>
             <ul className='skills-list'>
               <div className='skills-item'>
                 <li><SiJavascript/></li>&nbsp;
@@ -58,7 +58,7 @@ const Skills: FC<SkillsProps> = () => (
             </ul>
           </div>
           <div style={{width: '106px'}}>
-            <h4 className='margin-bottom-35' style={{textAlign: 'center'}}>Frameworks</h4>
+            <h4 className='margin-bottom-35'>Frameworks</h4>
             <ul className='skills-list'>
               <div className='skills-item'>
                 <li><FaAngular/></li>&nbsp;
@@ -91,7 +91,7 @@ const Skills: FC<SkillsProps> = () => (
             </ul>
           </div>
           <div style={{width: '106px'}}>
-            <h4 className='margin-bottom-35' style={{textAlign: 'center'}}>Tools</h4>
+            <h4 className='margin-bottom-35'>Tools</h4>
             <ul className='skills-list'>
               <div className='skills-item'>
                 <li><BsGithub/></li>&nbsp;
