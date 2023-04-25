@@ -23,7 +23,8 @@ const Contact: FC<ContactProps> = () => {
         });
     }, (error) => {
         setLoading(false);
-        toast.error("Unsuccessful: " + error, {
+        console.log('error: ', error);
+        toast.error("Unsuccessful: " + error.text, {
           position: toast.POSITION.BOTTOM_CENTER,
           autoClose: 1000,
         });
