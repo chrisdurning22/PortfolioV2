@@ -7,13 +7,7 @@ const About: FC<AboutProps> = () => (
     <div className="section-child">
       <h3>About Me &#128075;</h3>
       <p>
-        I'm currently looking for a new challenge. I have 4 years of professional experience
-        working at all levels of the stack. Most of my experience comes
-        from creating front-end web applications with Javascript frameworks,
-        but I also have good experience developing RESTful API's. I am a
-        hard worker with a passion for technology. I am always willing to
-        adapt to change and improve my skillset through continuous
-        learning.
+      I am a dedicated and innovative software engineer with 4 years of professional experience in crafting captivating and high-performance web applications. I have a deep understanding of modern web technologies, including, HTML5, CSS3 and Javascript (also Typescript) as well as proficiency in popular frontend frameworks such as React and Angular. Although most of my experience comes from working on the frontend, I have also spent a great deal of time developing RESTful API’s. Professionally I have used ASP.NET Core (C#) to develop API's but I have also worked with NodeJS and Express.js through the years on some personal projects.
       </p>
     </div>
   </section>

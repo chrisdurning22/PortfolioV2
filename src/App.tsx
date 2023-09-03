@@ -3,7 +3,7 @@ import Home from './components/Home/Home';
 import { useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import { Button } from 'react-bootstrap';
-import CV from '../src/assets/shared/ChrisDurning2023CV.pdf'
+import CV from '../src/assets/shared/ChrisDurningCV2023Sept.pdf'
 
 const App = () => {
   const [navVisible, setNavVisible] = useState(false);
