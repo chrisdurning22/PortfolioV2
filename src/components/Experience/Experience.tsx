@@ -36,7 +36,7 @@ const Experience: FC<ExperienceProps> = () => (
                       pleasing and higher performing Angular application.
                     </li>
                     <li>
-                      Develop RESTful APIs using ASP.NET Core that serve data to
+                      Develop RESTful APIs with ASP.NET Core & SQL server that serve data to
                       the Angular front-end.
                     </li>
                     <li>Prevent the introduction of new bugs by writing unit tests with Jasmine and Karma.</li>
