@@ -26,7 +26,7 @@ const Experience: FC<ExperienceProps> = () => (
               <Tab.Content>
                 <Tab.Pane eventKey="first">
                   <div className='experience-heading'>
-                    <h4 className='margin-bottom-10'>Software Engineer III @ Keyedin Solutions</h4>
+                    <h4 className='margin-bottom-10'>Software Developer III @ Keyedin Solutions</h4>
                     <h5>January 2020 - May 2023</h5>
                   </div> 
                   <ul>
