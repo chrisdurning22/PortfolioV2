@@ -75,7 +75,7 @@ const App = () => {
       <Home/>
       <footer>
         <div className='flex-center'>
-          <p>© Copyright Chris Durning 2023.</p>
+          <p>© Copyright Chris Durning 2024.</p>
         </div>
       </footer>
     </div>
